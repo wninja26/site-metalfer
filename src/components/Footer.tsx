@@ -11,7 +11,7 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-3 mb-4">
-              <Image src={ap("/logo.png")} alt={COMPANY.name} width={36} height={36} className="object-contain mix-blend-screen" />
+              <Image src={ap("/logo.png")} alt={COMPANY.name} width={36} height={36} className="object-contain" />
               <span className="font-black text-white text-lg">{COMPANY.name}</span>
             </div>
             <p className="text-gray-500 text-sm leading-relaxed">

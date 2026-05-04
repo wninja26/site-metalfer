@@ -34,7 +34,7 @@ export default function Header() {
               alt={COMPANY.name}
               width={40}
               height={40}
-              className="object-contain"
+              className="object-contain mix-blend-screen"
             />
             <span className="font-bold text-white text-lg tracking-wide">
               {COMPANY.name}

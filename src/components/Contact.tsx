@@ -1,4 +1,4 @@
-import { COMPANY, WHATSAPP_FULL_URL } from "@/lib/constants";
+import { COMPANY, WHATSAPP_FULL_URL, MAPS_URL } from "@/lib/constants";
 
 export default function Contact() {
   return (
@@ -92,7 +92,12 @@ export default function Contact() {
               </div>
             </a>
 
-            <div className="flex items-center gap-4 bg-[#111111] border border-gray-800 rounded-xl p-5">
+            <a
+              href={MAPS_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 bg-[#111111] border border-gray-800 rounded-xl p-5 hover:border-[#CC1100]/50 transition-all duration-300 group"
+            >
               <div className="w-12 h-12 bg-[#CC1100]/10 rounded-xl flex items-center justify-center shrink-0">
                 <svg className="w-6 h-6 text-[#CC1100]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
@@ -101,9 +106,9 @@ export default function Contact() {
               </div>
               <div>
                 <p className="text-gray-500 text-xs uppercase tracking-widest mb-0.5">Localização</p>
-                <p className="text-white font-bold">{COMPANY.location}</p>
+                <p className="text-white font-bold group-hover:text-[#CC1100] transition-colors">{COMPANY.location} — Ver no Maps</p>
               </div>
-            </div>
+            </a>
           </div>
         </div>
       </div>

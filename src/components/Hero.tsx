@@ -15,7 +15,7 @@ export default function Hero() {
         muted
         loop
         playsInline
-        className="absolute inset-0 w-full h-full object-cover opacity-40"
+        className="absolute inset-0 w-full h-full object-cover opacity-55"
       >
         <source src={`${basePath}/corte-plasma.mp4`} type="video/mp4" />
       </video>
@@ -35,7 +35,7 @@ export default function Hero() {
             alt={COMPANY.name}
             width={180}
             height={180}
-            className="object-contain drop-shadow-2xl"
+            className="object-contain drop-shadow-2xl mix-blend-screen"
             priority
           />
         </div>

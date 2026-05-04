@@ -8,6 +8,8 @@ export const WHATSAPP_MESSAGE = encodeURIComponent(
 );
 export const WHATSAPP_FULL_URL = `${WHATSAPP_URL}?text=${WHATSAPP_MESSAGE}`;
 
+export const MAPS_URL = "https://maps.app.goo.gl/qjAVr9HNBPS17jxK8";
+
 export const COMPANY = {
   name: "Metalfer",
   fullName: "Metalfer Corte & Dobra",

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState, useEffect } from "react";
-import { NAV_LINKS, COMPANY } from "@/lib/constants";
+import { NAV_LINKS, COMPANY, ap } from "@/lib/constants";
 
 export default function Header() {
   const [scrolled, setScrolled] = useState(false);
@@ -30,7 +30,7 @@ export default function Header() {
         <div className="flex items-center justify-between h-16">
           <button onClick={() => handleNav("#inicio")} className="flex items-center gap-3">
             <Image
-              src="/logo.png"
+              src={ap("/logo.png")}
               alt={COMPANY.name}
               width={40}
               height={40}

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { COMPANY, WHATSAPP_FULL_URL } from "@/lib/constants";
+import { COMPANY, WHATSAPP_FULL_URL, ap } from "@/lib/constants";
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
@@ -31,7 +31,7 @@ export default function Hero() {
       <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
         <div className="flex justify-center mb-8">
           <Image
-            src="/logo.png"
+            src={ap("/logo.png")}
             alt={COMPANY.name}
             width={180}
             height={180}

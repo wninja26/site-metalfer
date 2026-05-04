@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { COMPANY } from "@/lib/constants";
+import { COMPANY, ap } from "@/lib/constants";
 
 const stats = [
   { value: "Sob Medida", label: "Todo projeto é personalizado" },
@@ -52,7 +52,7 @@ export default function About() {
           <div className="flex flex-col gap-4">
             <div className="relative w-full aspect-[4/3] rounded-2xl overflow-hidden border border-gray-800">
               <Image
-                src="/portfolio/dono-galpao.jpg"
+                src={ap("/portfolio/dono-galpao.jpg")}
                 alt="Dono da Metalfer no galpão industrial"
                 fill
                 className="object-cover"

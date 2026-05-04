@@ -1,3 +1,6 @@
+export const ap = (path: string) =>
+  `${process.env.NEXT_PUBLIC_BASE_PATH || ""}${path}`;
+
 export const WHATSAPP_NUMBER = "5534999752868";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
 export const WHATSAPP_MESSAGE = encodeURIComponent(

@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { WHATSAPP_FULL_URL } from "@/lib/constants";
+import { WHATSAPP_FULL_URL, ap } from "@/lib/constants";
 
 const photos = [
   { src: "/portfolio/corte-serie.jpg", alt: "Peças cortadas em série por plasma CNC" },
@@ -38,7 +38,7 @@ export default function Portfolio() {
               className="group relative aspect-square overflow-hidden rounded-xl border border-gray-800 hover:border-[#CC1100]/60 transition-all duration-300"
             >
               <Image
-                src={photo.src}
+                src={ap(photo.src)}
                 alt={photo.alt}
                 fill
                 className="object-cover group-hover:scale-105 transition-transform duration-500"
@@ -100,7 +100,7 @@ export default function Portfolio() {
           </button>
           <div className="relative max-w-4xl max-h-[90vh] w-full h-full">
             <Image
-              src={lightbox}
+              src={ap(lightbox)}
               alt="Foto ampliada"
               fill
               className="object-contain"

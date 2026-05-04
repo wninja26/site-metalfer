@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { COMPANY, WHATSAPP_FULL_URL } from "@/lib/constants";
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH || "";
+
 export default function Hero() {
   return (
     <section
@@ -15,7 +17,7 @@ export default function Hero() {
         playsInline
         className="absolute inset-0 w-full h-full object-cover opacity-40"
       >
-        <source src="/corte-plasma.mp4" type="video/mp4" />
+        <source src={`${basePath}/corte-plasma.mp4`} type="video/mp4" />
       </video>
 
       {/* Dark overlay para legibilidade */}

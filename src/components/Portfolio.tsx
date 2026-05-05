@@ -12,6 +12,7 @@ const photos = [
   { src: "/portfolio/maquina-cnc.jpg", alt: "Máquina de corte CNC de grande porte" },
   { src: "/portfolio/chapas-brutas.jpg", alt: "Chapas de aço brutas prontas para corte" },
   { src: "/portfolio/dono-galpao.jpg", alt: "Estrutura e equipe da Metalfer Corte & Dobra" },
+  { src: "/portfolio/corte-faiscas.jpg", alt: "Corte a plasma com faíscas — Metalfer" },
 ];
 
 export default function Portfolio() {

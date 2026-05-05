@@ -15,6 +15,10 @@ const reviews = [
     name: "Larissa Camargos Fernandes",
     text: "Oferecendo o melhor aos colaboradores e clientes. Parabéns Samuel e Flávia e equipe!",
   },
+  {
+    name: "Weber Silva",
+    text: "Quero deixar registrada minha satisfação com a empresa Metalúrgica Metalfer. Fui muito bem atendido desde o primeiro contato, com profissionalismo, atenção e compromisso em entender minha necessidade. Recomendo a Metalúrgica Metalfer para quem busca qualidade, seriedade e um excelente atendimento. Parabéns a toda equipe pelo ótimo trabalho!",
+  },
 ];
 
 function Stars() {
@@ -65,7 +69,7 @@ export default function Testimonials() {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5 gap-6">
           {reviews.map((review) => (
             <div
               key={review.name}
